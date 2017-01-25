@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView
+        android:text="PlaceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/PlaceName"
+        android:textSize="40px"
+        android:layout_toLeftOf="@+id/ratingBar2"
+        android:layout_toStartOf="@+id/ratingBar2" />
+
+    <TextView
+        android:text="NA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingView"
+        android:textSize="40px"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_alignBaseline="@+id/PlaceName"
+        android:layout_alignBottom="@+id/PlaceName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RatingBar
+        android:isIndicator="true"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar2"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/ratingView"
+        android:layout_toStartOf="@+id/ratingView" />
+
+</RelativeLayout>
